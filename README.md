@@ -28,7 +28,15 @@ All the required files are inside the demo_lyrics_search sub folder. Inside the 
 	
 	extract_lyrics_words.py : extract_artistwords.py,extract_titlewords.py : Python scripts to extrat all different lyrics words, artist(/musician/lyricist) 				words, title words respectively in the song corpus(sin_oldies.json)
 
+For ease of access, all the data files are included in the data folder.
 
+	sin_oldies.json : contains scraped and processed song metadata
+	
+	artists.txt :  extracted all words of artists/musicians/lyricist in the song corpus 
+	
+	titles.txt :  extracted all words of titles of song corpus 
+	
+	
 1. About the scraping process
 
 * The spiders/test.py file contains the code used to scrape the webpages of the site. 
