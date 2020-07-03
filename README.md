@@ -30,27 +30,27 @@ extract_lyrics_words.py,extract_artistwords.py,extract_titlewords.py : Python sc
 * This will scrape from specified urls and save processed meta data inside sin_oldies.json file.
 
 'spi' is the name of the spider
-#name = 'spi'
+	name = 'spi'
 
 Change next_urls by specifying a list of urls ('https://sinhalasongbook.com/tag/group-songs/page/2,'https://sinhalasongbook.com/tag/group-songs/page/3,etc) you need to scrape. Change this by the required next urls you need to scrape.
-#next_urls = ['https://sinhalasongbook.com/tag/group-songs/page/{}'.format(page) for page in range(2,9)]
+	next_urls = ['https://sinhalasongbook.com/tag/group-songs/page/{}'.format(page) for page in range(2,9)]
 
 start_urls contain the seed/start url ('https://sinhalasongbook.com/tag/group-songs/) the spider needs to scrape. Change this by the required start url you need to scrape.
-#start_urls = [	'https://sinhalasongbook.com/tag/group-songs/']
+	start_urls = [	'https://sinhalasongbook.com/tag/group-songs/']
 
 extending the urls to provide all urls to spider
-#start_urls.extend(next_urls)
+	start_urls.extend(next_urls)
 
 translate_to_sinhala : this function translates given english words to sinhala. As the website contains artist/lyrcist/musician names in English, translation to Sinhala is required. Google translate service is used for this. 
 
-#def translate_to_sinhala(self,word):
-#	translator =  Translator()
+	def translate_to_sinhala(self,word):
+		translator =  Translator()
 
 Some translations are misleading. Thus required to go through each translation and apply hacks for the misleading ones.
-#new_words = ['Begh' if word == 'Beg' else word for word in li]
+	new_words = ['Begh' if word == 'Beg' else word for word in li]
 
 This function takes into account the scraped data at hand and process/parse the data as required by the application
-#def parse_meta_data(self, response):
+	def parse_meta_data(self, response):
 
 
 2. Indexing Techniques
