@@ -29,7 +29,7 @@ extract_lyrics_words.py,extract_artistwords.py,extract_titlewords.py : Python sc
 * In order to diretly scrape from the site, open a terminal inside spiders folder and execute : scrapy crawl spi
 * This will scrape from specified urls and save processed meta data inside sin_oldies.json file.
 
-# 'spi' is the name of the spider
+'spi' is the name of the spider
 name = 'spi'
 
 # Change next_urls by specifying a list of urls ('https://sinhalasongbook.com/tag/group-songs/page/2,'https://sinhalasongbook.com/tag/group-songs/page/3,etc) you need to scrape. Change this by the required next urls you need to scrape.
