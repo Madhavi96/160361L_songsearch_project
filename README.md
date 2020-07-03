@@ -34,8 +34,10 @@ All the required files are inside the demo_lyrics_search sub folder. Inside the 
 * The spiders/test.py file contains the code used to scrape the webpages of the site. 
 * In order to diretly scrape from the site, open a terminal inside spiders folder and execute : scrapy crawl spi
 * This will scrape from specified urls and save processed meta data inside sin_oldies.json file.
+* Below is a simple explanation to important code blocks of test.py
 
 'spi' is the name of the spider
+
 	name = 'spi'
 
 Change next_urls by specifying a list of urls ('https://sinhalasongbook.com/tag/group-songs/page/2,'https://sinhalasongbook.com/tag/group-songs/page/3,etc) you need to scrape. Change this by the required next urls you need to scrape.
